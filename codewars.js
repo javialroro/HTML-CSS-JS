@@ -22,6 +22,27 @@ function solution(start, finish)
   return saltos
 }
 
+function DNAStrand(dna){
+    let answer="";
+    for (const c of dna){
+      switch(c){
+          case "A":
+            answer+="T";
+            break;
+          case "T":
+            answer+="A";
+            break;
+          case "C":
+            answer+="G";
+            break;
+          case "G":
+            answer+="C";
+            break;
+      }
+      
+    }
+    return answer
+  }
 
 //solution(1,5)
 
